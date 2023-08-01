@@ -14,11 +14,10 @@ body{
     font-size: 14px;
     color: white;
     background: mediumseagreen;
-    text-shadow: 0 -1px 0 #111;
     border: 0 solid;
 }  
 li{
-    list-style: none;
+    
     display: block;
     color: #fff;
     width: 25%;
@@ -26,11 +25,18 @@ li{
     
 }
 .submenu{
+    position: absolute;
+    width: 25%;
     display: none;
-
+    list-style: none;
+}
+ul .submenu>li{
+    display: block;
+    float: left;
 }
 
-ul li a{
+
+li a{
     border-right:1px solid green;
     border-left:1px solid green;
     padding:17px;
@@ -39,7 +45,7 @@ ul li a{
     text-align:center;
     color:#FFF;
     background: mediumseagreen;
-           
+     list-style: none;      
   
 }
 ul li a:hover{
